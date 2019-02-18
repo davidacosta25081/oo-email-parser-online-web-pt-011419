@@ -6,11 +6,10 @@ attr_accessor :emails
 
 def initialize(emails)
 @emails=emails
-@@parsed << emails
 end
 
 def self.parse(emails)
-
+emails.split(',')
 end
 
 
