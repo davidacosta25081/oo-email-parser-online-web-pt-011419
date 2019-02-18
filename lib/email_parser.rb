@@ -9,7 +9,7 @@ def initialize(emails)
 end
 
 def self.parse(emails)
-emails.split(',')
+emails.split(/[\s,]+/)
 end
 
 
