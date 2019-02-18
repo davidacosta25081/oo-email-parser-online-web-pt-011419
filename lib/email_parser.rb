@@ -1,6 +1,6 @@
 class EmailParser
 
-@@parsed = []
+
 
 attr_accessor :emails
 
@@ -9,7 +9,7 @@ def initialize(emails)
 end
 
 def parse
-    email_list = @email.split(/[,\s]/)
+    email_list = @emails.split(/[,\s]/)
     email_list.uniq.reject {|x| x.empty?}
   end
 
