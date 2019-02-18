@@ -6,7 +6,7 @@ attr_accessor :emails
 
 def initialize(emails)
 @emails=emails
-@@emailsglobal = emails
+@@parsed << emails
 end
 
 def self.parse(emails)
