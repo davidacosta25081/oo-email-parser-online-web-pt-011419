@@ -8,9 +8,10 @@ def initialize(emails)
 @emails=emails
 end
 
-def self.parse(emails)
-emails.split(/[\s,]+/)
-end
+def parse
+    email_list = @email.split(/[,\s]/)
+    email_list.uniq.reject {|x| x.empty?}
+  end
 
 
 end
